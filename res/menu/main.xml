@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sponmod.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+        <item
+        android:id="@+id/reichweite_info"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/reichweite_info"/>
+    
+        <item
+        android:id="@+id/sonstige_info"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sonstige_info"/>
+    
+    
+    
+</menu>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:shrinkColumns="0,1,2,3,4"
+    tools:context="com.example.sponmod.MainActivity">
+<!--      android:shrinkColumns="2,3,4"
+    android:stretchColumns="1,2"-->    
+
+    
+    <TableRow
+        android:id="@+id/maintableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <!-- <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="18dp"
+            android:text="Weather Table"
+            android:gravity="center"
+            android:layout_span="4"></TextView>-->
+        <TextView
+         android:id="@+id/spalte_leer1"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:text=""
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:gravity="center" />
+       <TextView
+         android:id="@+id/spalte_leer2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:gravity="center" />
+        <TextView
+         android:id="@+id/zfw_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/zfw_label_text"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:gravity="center" />
+        <TextView
+         android:id="@+id/zd_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/zd_label_text"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:gravity="center" />
+        <TextView
+         android:id="@+id/asp_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/asp_label_text"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/maintableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+        android:id="@+id/zeile1_txt_label"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/eingabe_label_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_span="2"
+        android:gravity="center" />
+
+      <EditText
+          android:id="@+id/zfw_eingabe"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="2"
+          android:gravity="center_vertical|center_horizontal"
+          android:inputType="number"
+          android:labelFor="@id/zfw_eingabe" >
+
+        <requestFocus />
+      </EditText>
+
+      <EditText
+          android:id="@+id/zd_eingabe"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="2"
+          android:gravity="center_vertical|center_horizontal"
+          android:inputType="number"
+          android:labelFor="@id/zd_eingabe" />
+
+     <EditText
+         android:id="@+id/asp_eingabe"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="2"
+         android:gravity="center_vertical|center_horizontal"
+         android:inputType="number"
+         android:labelFor="@id/asp_eingabe" />
+
+    </TableRow>  
+
+    <TableRow
+        android:id="@+id/maintableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+        android:id="@+id/zeile2_txt_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_span="2" 
+        android:text="@string/ergebnis_label_text" />
+
+      <TextView
+          android:id="@+id/zfw_erg_ausgabe_feld"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/zd_erg_ausgabe_feld"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/asp_erg_ausgabe_feld"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textStyle="bold" />
+
+    </TableRow>  
+    
+    <TableRow
+        android:id="@+id/maintableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+        android:id="@+id/zeile3_txt_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:layout_span="2"        
+        android:text="@string/diff_label_text" />
+      <TextView
+        android:id="@+id/zfw_diff_ausgabe_feld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="" />
+      <TextView
+        android:id="@+id/zd_diff_ausgabe_feld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="" />
+      <TextView
+        android:id="@+id/asp_diff_ausgabe_feld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/maintableRow45"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+        android:id="@+id/zusatz_mr_leer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:gravity="center"
+        android:text="@string/hinweis_label_text" />
+      <TextView
+        android:id="@+id/zusatz_mr_leer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="" />
+      <TextView
+        android:id="@+id/zusatz_mr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="" />
+    </TableRow>
+    
+    <TableRow
+      android:id="@+id/maintableRow5"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+        <CheckBox
+        android:id="@+id/checkBox_gildenmagier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cb_gildenma"
+        android:layout_span="3"
+        android:onClick="onCheckboxClicked" />
+<!--         android:checked="true"-->
+
+        <Button
+            android:id="@+id/button_berechnen_start"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="@string/button_berechnen_label" />
+
+    </TableRow>
+    
+    <TableRow
+      android:id="@+id/maintableRow5_5"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+        <CheckBox
+        android:id="@+id/checkBox_elf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cb_elf"
+        android:layout_span="4"
+        android:onClick="onCheckboxClicked" />
+    </TableRow>    
+
+    <TableRow
+      android:id="@+id/maintableRow6"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_technik"
+        android:layout_width="20dp"
+        android:layout_height="40dp"/>
+      <TextView
+        android:id="@+id/spinner_technik_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/technik_label_text"
+        android:layout_span="4" />
+    </TableRow>
+    
+    <TableRow
+      android:id="@+id/maintableRow7"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_technikzk"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+      <TextView
+          android:id="@+id/spinner_technikzk_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_span="4"
+          android:text="@string/technikzk_label_text" />
+
+    </TableRow>
+
+    <TableRow
+      android:id="@+id/maintableRow8"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_halbzd"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_halbzd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/halbzd_label_text" />
+    </TableRow>
+    
+    <TableRow
+      android:id="@+id/maintableRow9"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_doppelzd"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_doppelzd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/doppelzd_label_text" />
+    </TableRow>
+
+    <TableRow
+      android:id="@+id/maintableRow10"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_erzwingen"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_erzwingen_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/erzwingen_label_text" />
+    </TableRow>
+
+    <TableRow
+      android:id="@+id/maintableRow11"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_kostensparen"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_kostensparen_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/kostensparen_label_text" />
+    </TableRow>
+    
+    <TableRow
+      android:id="@+id/maintableRow12"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_wirkreichgross"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_wirkreichgross_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/wirkreichgross_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow13"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_wirkreichklein"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_wirkreichklein_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/wirkreichklein_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow14"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_unfreiwillig"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_unfreiwillig_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/unfreiwillig_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow15"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_freiwillig"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_freiwillig_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/freiwillig_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow16"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_halbwd"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_halbwd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/halbwd_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow17"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_doppelwd"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_doppelwd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/doppelwd_label_text" />
+    </TableRow>
+        
+    <TableRow
+      android:id="@+id/maintableRow18"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <Spinner
+        android:id="@+id/spinner_aufrechtfest"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+      <TextView
+        android:id="@+id/spinner_aufrechtfest_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="4"
+        android:text="@string/aufrechtfest_label_text" />
+    </TableRow>    
+    
+    <TableRow
+      android:id="@+id/maintableRow19"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+      <TextView
+        android:id="@+id/zusatz_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_span="5"
+        android:text="" />
+    </TableRow>    
+    
+    <TableRow
+      android:id="@+id/maintableRow20"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    </TableRow>    
+    
+    
+</TableLayout>    
+</ScrollView>    
+    

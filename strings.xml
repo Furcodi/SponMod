@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SponMod</string>
+    <string name="action_settings">"über SponMod"</string>
+    <string name="info_text_settings">App zum Errechnen von spontanen Modifikationen nach DSA 4.1\nVersion 0.9 by Carsten</string>
+    <string name="sonstige_info">Zusatzinfos zu den SponMods</string>
+    <string name="reichweite_info">Reichweiten/Wirkungsradi</string>
+    <string name="reichweite_info_text">-Selbst\n-Berührung\n-1 Schritt (oder ZfW Spann)\n-3 Schritt (oder ZfW/2 Schritt)\n-7 Schritt (oder ZfW Schritt)\n-21 Schritt (oder ZfW x 3 Schritt)\n-49 Schritt (oder ZfW x 7 Schritt)\n-Horizont\n-Außer Sicht</string>
+    <string name="error_name_missing">Bitte alle Felder ausfüllen</string>
+    <string name="error_ok">OK</string>
+    <string name="cb_gildenma">Gildenmagier</string>
+    <string name="technik_label_text">veränderte Technik</string>
+    <string name="technikzk_label_text">veränderte Technik (z.K.)</string>
+    <string name="halbzd_label_text">halbierte Zauberdauer</string>    
+    <string name="doppelzd_label_text">doppelte Zauberdauer</string>
+    <string name="erzwingen_label_text">Erzwingen</string>
+    <string name="kostensparen_label_text">Kosten sparen</string>
+    <string name="wirkreichgross_label_text">Reichweite vergrößern</string>
+    <string name="wirkreichklein_label_text">Reichweite verkleinern</string>
+    <string name="unfreiwillig_label_text">unfreiwillig statt freiwillig</string>
+    <string name="freiwillig_label_text">freiwillig statt unfreiwillig</string>
+    <string name="halbwd_label_text">Halbierung der Wirkungsdauer</string>
+    <string name="doppelwd_label_text">Verdoppelung der Wirkungsdauer</string>
+    <string name="aufrechtfest_label_text">von Aufrechterhalten auf feste Dauer</string>
+    <string name="zfw_label_text">ZfW</string>
+    <string name="zd_label_text">ZD</string>
+    <string name="asp_label_text">AsP Kosten</string>
+    <string name="button_berechnen_label">Berechnen</string>
+    <string name="error_halb_und_doppel">halbieren und verdoppeln nicht möglich</string>
+    <string name="error_frei_und_unfrei">nicht möglich weil unfreiwillig</string>
+    
+    <string name="info_seite_text">\nMehrere Gefährten verzaubern (freiwillig): 3ZfP / +1/Person / 1 Akt.
+									\nMehrere Gegner verzaubern (unfreiwillig): 0 / +MRMax+Anzahl / 1 Akt
+									\nHalbierung der Wirkungsdauer: AsP-Grundkosten werden um 2/3 gesenkt
+									\nÄnderung von Aufrechterhalten auf feste Dauer: mehrfach pro Zeiteinheit des (A) wählbar
+        </string>
+    
+
+
+</resources>
